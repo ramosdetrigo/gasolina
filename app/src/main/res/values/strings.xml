@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculadora de Combustível</string>
+    <string name="alcool_label">Preço do Álcool (R$)</string>
+    <string name="gasolina_label">Preço da Gasolina (R$)</string>
+    <string name="eficiencia">Eficiência do álcool: %1$d%%</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado_invalido">Valores inválidos.</string>
+    <string name="melhor_alcool">É melhor usar álcool!\nPreço ajustado do álcool: R$%1$.2f</string>
+    <string name="melhor_gasolina">É melhor usar gasolina!\nPreço ajustado do álcool: R$%1$.2f</string>
+    <string name="nome_posto">Nome do Posto</string>
+    <string name="salvar_posto">Salvar posto</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fuel Calculator</string>
+    <string name="alcool_label">Alcohol Price ($)</string>
+    <string name="gasolina_label">Gasoline Price ($)</string>
+    <string name="eficiencia">Alcohol efficiency: %1$d%%</string>
+    <string name="calcular">Calculate</string>
+    <string name="resultado_invalido">Invalid values.</string>
+    <string name="melhor_alcool">It is best to use alcohol!\nAdjusted alcohol price: $%1$.2f</string>
+    <string name="melhor_gasolina">It is best to use gasoline!\nAdjusted alcohol price: $%1$.2f</string>
+    <string name="nome_posto">Station name</string>
+    <string name="salvar_posto">Save station</string>
+</resources>
