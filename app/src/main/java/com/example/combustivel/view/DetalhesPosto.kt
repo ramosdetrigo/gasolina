@@ -93,7 +93,8 @@ fun DetalhesPosto(navController: NavHostController, index: Int) {
                         if (novoAlcool != null && novoGasolina != null) {
                             val atualizado = posto.copy(
                                 alcool = novoAlcool,
-                                gasolina = novoGasolina
+                                gasolina = novoGasolina,
+                                data = System.currentTimeMillis()
                             )
 
                             lista[index] = atualizado
