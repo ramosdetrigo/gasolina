@@ -1,5 +1,6 @@
 package com.example.combustivel.view
 
+import androidx.compose.ui.res.stringResource
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
@@ -22,6 +23,7 @@ import com.example.combustivel.data.RepositorioPostos
 import java.text.SimpleDateFormat
 import java.util.*
 import androidx.core.net.toUri
+import com.example.combustivel.R
 
 @SuppressLint("MutableCollectionMutableState") // zzz
 @Composable
@@ -46,7 +48,7 @@ fun DetalhesPosto(navController: NavHostController, index: Int) {
             FloatingActionButton(onClick = {
                 navController.navigate("lista")
             }) {
-                Icon(imageVector = Icons.Filled.ArrowBack, contentDescription = "Lista de postos")
+                Icon(imageVector = Icons.Filled.ArrowBack, contentDescription = stringResource(R.string.voltar_lista))
             }
         }
     ) { padding ->
@@ -61,13 +63,13 @@ fun DetalhesPosto(navController: NavHostController, index: Int) {
             Text(text = posto.nome, style = MaterialTheme.typography.titleLarge)
 
             // converte a data de millis pra uma data legível
-            Text(text = "Data: ${sdf.format(Date(posto.data))}")
+            Text(text = stringResource(R.string.data, sdf.format(Date(posto.data))))
 
             // EDITÁVEL
             OutlinedTextField(
                 value = alcool,
                 onValueChange = { alcool = it },
-                label = { Text("Álcool") },
+                label = { Text(stringResource(R.string.alcool)) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                 modifier = Modifier.fillMaxWidth()
             )
@@ -75,7 +77,7 @@ fun DetalhesPosto(navController: NavHostController, index: Int) {
             OutlinedTextField(
                 value = gasolina,
                 onValueChange = { gasolina = it },
-                label = { Text("Gasolina") },
+                label = { Text(stringResource(R.string.gasolina)) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                 modifier = Modifier.fillMaxWidth()
             )
@@ -102,7 +104,7 @@ fun DetalhesPosto(navController: NavHostController, index: Int) {
                 ) {
                     Icon(Icons.Default.Save, contentDescription = null)
                     Spacer(Modifier.width(4.dp))
-                    Text("Salvar")
+                    Text(stringResource(R.string.salvar))
                 }
 
                 // Remover mapa da lista
@@ -116,7 +118,7 @@ fun DetalhesPosto(navController: NavHostController, index: Int) {
                 ) {
                     Icon(Icons.Default.Delete, contentDescription = null)
                     Spacer(Modifier.width(4.dp))
-                    Text("Excluir")
+                    Text(stringResource(R.string.excluir))
                 }
             }
 
@@ -131,7 +133,7 @@ fun DetalhesPosto(navController: NavHostController, index: Int) {
                 ) {
                     Icon(Icons.Default.Map, contentDescription = null)
                     Spacer(Modifier.width(4.dp))
-                    Text("Ver no mapa")
+                    Text(stringResource(R.string.ver_mapa))
                 }
 
                 // Botão de botar as informações do posto na calculadora
@@ -145,7 +147,7 @@ fun DetalhesPosto(navController: NavHostController, index: Int) {
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Icon(Icons.Default.Calculate, contentDescription = null)
-                    Text("Calculadora")
+                    Text(stringResource(R.string.calculadora))
                 }
             }
         }

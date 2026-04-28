@@ -9,4 +9,12 @@
     <string name="melhor_gasolina">É melhor usar gasolina!\nPreço ajustado do álcool: R$%1$.2f</string>
     <string name="nome_posto">Nome do Posto</string>
     <string name="salvar_posto">Salvar posto</string>
+    <string name="data">Data: %1$s</string>
+    <string name="alcool">Álcool</string>
+    <string name="gasolina">Gasolina</string>
+    <string name="salvar">Salvar</string>
+    <string name="excluir">Excluir</string>
+    <string name="ver_mapa">Ver no mapa</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="voltar_lista">Lista de postos</string>
 </resources>

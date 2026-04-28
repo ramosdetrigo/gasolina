@@ -9,4 +9,12 @@
     <string name="melhor_gasolina">It is best to use gasoline!\nAdjusted alcohol price: $%1$.2f</string>
     <string name="nome_posto">Station name</string>
     <string name="salvar_posto">Save station</string>
+    <string name="data">Date: %1$s</string>
+    <string name="alcool">Alcohol</string>
+    <string name="gasolina">Gasoline</string>
+    <string name="salvar">Save</string>
+    <string name="excluir">Delete</string>
+    <string name="ver_mapa">View on map</string>
+    <string name="calculadora">Calculator</string>
+    <string name="voltar_lista">Station list</string>
 </resources>
